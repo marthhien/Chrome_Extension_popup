@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Chrome Extension popup",
+  "short_name": "Chrome_Extension_popup",
+  "description": "Martin Chrome Extension (popup)",
+  "version": "1.0.0",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/icon128.png",
+    "default_title": "Chrome Extension popup",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [
+      "scripts/browser-action.js"
+    ],
+    "persistent": false
+  },
+  "permissions": [
+    "activeTab",
+    "clipboardWrite",
+    "contextMenus",
+    "tabs",
+    "file:///*/"
+  ]
+}
